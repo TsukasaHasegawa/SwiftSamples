@@ -23,7 +23,7 @@ class TopViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    private func displaySegmentedControlViewController() {
+    private func showSegmentedControlViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "SegmentedControl", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
             guard let viewController = navigation.topViewController as? SegmentedControlViewController else { return }
@@ -31,7 +31,15 @@ class TopViewController: UIViewController {
         }
     }
     
-    private func displayFacebookLoginViewController() {
+    private func showWKWebViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "WKWebView", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
+            guard let viewController = navigation.topViewController as? WKWebViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    private func showFacebookLoginViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "FacebookLogin", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
             guard let viewController = navigation.topViewController as? FacebookLoginViewController else { return }
@@ -79,9 +87,11 @@ extension TopViewController: UITableViewDelegate {
         case .basic:
             switch Top.BasicCell.allCases[indexPath.row] {
             case .segmentedControl:
-                displaySegmentedControlViewController()
+                showSegmentedControlViewController()
+            case .wkWebView:
+                showWKWebViewController()
             case .facebookLogin:
-                displayFacebookLoginViewController()
+                showFacebookLoginViewController()
             }
         case .advanced:
             print("advanced")

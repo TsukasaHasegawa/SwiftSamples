@@ -17,6 +17,8 @@
 		65136FEF21CA968C0020AAA7 /* SegmentedControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65136FEE21CA968C0020AAA7 /* SegmentedControl.storyboard */; };
 		65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */; };
 		65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */; };
+		65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B1A21D5D203005C86CD /* WKWebViewController.swift */; };
+		65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73B1C21D5D2E2005C86CD /* WKWebView.storyboard */; };
 		AAEE80C30235CCFEDFEBD118 /* Pods_SwiftSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFADE24ACCC5A8AA439795A /* Pods_SwiftSamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftSamples.entitlements; sourceTree = "<group>"; };
 		65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FacebookLogin.storyboard; sourceTree = "<group>"; };
+		65F73B1A21D5D203005C86CD /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		65F73B1C21D5D2E2005C86CD /* WKWebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebView.storyboard; sourceTree = "<group>"; };
 		7E2900524D657F4D11ABD069 /* Pods-SwiftSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		BD29DE3CC10A7C11B5F18448 /* Pods-SwiftSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples.release.xcconfig"; sourceTree = "<group>"; };
 		FCFADE24ACCC5A8AA439795A /* Pods_SwiftSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,13 +79,14 @@
 			isa = PBXGroup;
 			children = (
 				65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */,
-				65F73AE721D130A9005C86CD /* FacebookLogin */,
-				65136FEA21CA94CA0020AAA7 /* SegmentedControl */,
-				65136FE921CA947B0020AAA7 /* Top */,
+				65136FDB21C541E40020AAA7 /* Info.plist */,
 				65136FCF21C541E20020AAA7 /* AppDelegate.swift */,
 				65136FD621C541E40020AAA7 /* Assets.xcassets */,
+				65F73AE721D130A9005C86CD /* FacebookLogin */,
 				65136FD821C541E40020AAA7 /* LaunchScreen.storyboard */,
-				65136FDB21C541E40020AAA7 /* Info.plist */,
+				65136FEA21CA94CA0020AAA7 /* SegmentedControl */,
+				65136FE921CA947B0020AAA7 /* Top */,
+				65F73B1821D5D19E005C86CD /* WKWebView */,
 			);
 			path = SwiftSamples;
 			sourceTree = "<group>";
@@ -95,13 +100,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		65136FE321C542AC0020AAA7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		65136FE421C542C30020AAA7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,20 +108,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		65136FE521C542CD0020AAA7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		65136FE921CA947B0020AAA7 /* Top */ = {
 			isa = PBXGroup;
 			children = (
 				65136FE421C542C30020AAA7 /* Models */,
 				65136FE121C5428B0020AAA7 /* ViewControllers */,
-				65136FE521C542CD0020AAA7 /* ViewModels */,
-				65136FE321C542AC0020AAA7 /* Views */,
 			);
 			path = Top;
 			sourceTree = "<group>";
@@ -168,6 +157,23 @@
 			children = (
 				65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */,
 				65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65F73B1821D5D19E005C86CD /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				65F73B1921D5D1C4005C86CD /* ViewControllers */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		65F73B1921D5D1C4005C86CD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65F73B1A21D5D203005C86CD /* WKWebViewController.swift */,
+				65F73B1C21D5D2E2005C86CD /* WKWebView.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
 				65136FD721C541E40020AAA7 /* Assets.xcassets in Resources */,
 				65136FD521C541E20020AAA7 /* Top.storyboard in Resources */,
+				65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */,
 				65136FEF21CA968C0020AAA7 /* SegmentedControl.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
+				65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */,
 				65136FD221C541E20020AAA7 /* TopViewController.swift in Sources */,
 				65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */,
 				65136FD021C541E20020AAA7 /* AppDelegate.swift in Sources */,
