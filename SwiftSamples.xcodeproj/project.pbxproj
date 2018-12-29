@@ -15,6 +15,9 @@
 		65136FE821C543AF0020AAA7 /* Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136FE721C543AF0020AAA7 /* Top.swift */; };
 		65136FED21CA95240020AAA7 /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136FEC21CA95240020AAA7 /* SegmentedControlViewController.swift */; };
 		65136FEF21CA968C0020AAA7 /* SegmentedControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65136FEE21CA968C0020AAA7 /* SegmentedControl.storyboard */; };
+		655B1A8E21D7D3A1000CADBD /* PickerTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A8D21D7D3A1000CADBD /* PickerTextFieldViewController.swift */; };
+		655B1A9021D7D3F1000CADBD /* PickerTextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655B1A8F21D7D3F1000CADBD /* PickerTextField.storyboard */; };
+		655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A9521D7DA3B000CADBD /* BirthMonth.swift */; };
 		65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */; };
 		65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */; };
 		65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B1A21D5D203005C86CD /* WKWebViewController.swift */; };
@@ -36,6 +39,9 @@
 		65136FE721C543AF0020AAA7 /* Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top.swift; sourceTree = "<group>"; };
 		65136FEC21CA95240020AAA7 /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
 		65136FEE21CA968C0020AAA7 /* SegmentedControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SegmentedControl.storyboard; sourceTree = "<group>"; };
+		655B1A8D21D7D3A1000CADBD /* PickerTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTextFieldViewController.swift; sourceTree = "<group>"; };
+		655B1A8F21D7D3F1000CADBD /* PickerTextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerTextField.storyboard; sourceTree = "<group>"; };
+		655B1A9521D7DA3B000CADBD /* BirthMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthMonth.swift; sourceTree = "<group>"; };
 		65F73AE121D12CD6005C86CD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		65F73AE221D12CD6005C86CD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
@@ -84,16 +90,13 @@
 		65136FCE21C541E20020AAA7 /* SwiftSamples */ = {
 			isa = PBXGroup;
 			children = (
-				65F73B1E21D6B3AB005C86CD /* DateToString */,
 				65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */,
 				65136FDB21C541E40020AAA7 /* Info.plist */,
 				65136FCF21C541E20020AAA7 /* AppDelegate.swift */,
 				65136FD621C541E40020AAA7 /* Assets.xcassets */,
-				65F73AE721D130A9005C86CD /* FacebookLogin */,
+				655B1A8721D7C52B000CADBD /* Basic */,
 				65136FD821C541E40020AAA7 /* LaunchScreen.storyboard */,
-				65136FEA21CA94CA0020AAA7 /* SegmentedControl */,
 				65136FE921CA947B0020AAA7 /* Top */,
-				65F73B1821D5D19E005C86CD /* WKWebView */,
 			);
 			path = SwiftSamples;
 			sourceTree = "<group>";
@@ -139,6 +142,44 @@
 				65136FEE21CA968C0020AAA7 /* SegmentedControl.storyboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		655B1A8721D7C52B000CADBD /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				655B1A8B21D7D338000CADBD /* PickerTextField */,
+				65F73B1E21D6B3AB005C86CD /* DateToString */,
+				65F73AE721D130A9005C86CD /* FacebookLogin */,
+				65136FEA21CA94CA0020AAA7 /* SegmentedControl */,
+				65F73B1821D5D19E005C86CD /* WKWebView */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		655B1A8B21D7D338000CADBD /* PickerTextField */ = {
+			isa = PBXGroup;
+			children = (
+				655B1A9421D7DA1F000CADBD /* Models */,
+				655B1A8C21D7D34C000CADBD /* ViewControllers */,
+			);
+			path = PickerTextField;
+			sourceTree = "<group>";
+		};
+		655B1A8C21D7D34C000CADBD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				655B1A8D21D7D3A1000CADBD /* PickerTextFieldViewController.swift */,
+				655B1A8F21D7D3F1000CADBD /* PickerTextField.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		655B1A9421D7DA1F000CADBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				655B1A9521D7DA3B000CADBD /* BirthMonth.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		65F73AE021D12CD6005C86CD /* Frameworks */ = {
@@ -285,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655B1A9021D7D3F1000CADBD /* PickerTextField.storyboard in Resources */,
 				65136FDA21C541E40020AAA7 /* LaunchScreen.storyboard in Resources */,
 				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
 				65136FD721C541E40020AAA7 /* Assets.xcassets in Resources */,
@@ -347,12 +389,14 @@
 			files = (
 				65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */,
 				65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */,
+				655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */,
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
 				65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */,
 				65136FD221C541E20020AAA7 /* TopViewController.swift in Sources */,
 				65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */,
 				65136FD021C541E20020AAA7 /* AppDelegate.swift in Sources */,
 				65136FED21CA95240020AAA7 /* SegmentedControlViewController.swift in Sources */,
+				655B1A8E21D7D3A1000CADBD /* PickerTextFieldViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,6 +31,14 @@ class TopViewController: UIViewController {
         }
     }
     
+    private func showPickerTextFieldViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "PickerTextField", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
+            guard let viewController = navigation.topViewController as? PickerTextFieldViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     private func showDateSampleViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "DateSample", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
@@ -96,6 +104,8 @@ extension TopViewController: UITableViewDelegate {
             switch Top.BasicCell.allCases[indexPath.row] {
             case .segmentedControl:
                 showSegmentedControlViewController()
+            case .pickerTextField:
+                showPickerTextFieldViewController()
             case .dateToString:
                 showDateSampleViewController()
             case .wkWebView:

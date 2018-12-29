@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lGN-xe-3j4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker + TextField-->
+        <scene sceneID="H5k-Ds-hfV">
+            <objects>
+                <viewController title="Picker + TextField" id="Ff9-7w-6fB" customClass="PickerTextFieldViewController" customModule="SwiftSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ya4-8X-X4q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WbQ-JB-H2s">
+                                <rect key="frame" x="40" y="318.5" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Yh-p8-ZuZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which is your birth month?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dS-HB-WKL">
+                                <rect key="frame" x="40" y="248" width="295" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TYI-N6-IGD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WbQ-JB-H2s" firstAttribute="top" secondItem="8dS-HB-WKL" secondAttribute="bottom" constant="26.5" id="6rA-2C-lEi"/>
+                            <constraint firstItem="zXs-2U-XI8" firstAttribute="trailing" secondItem="WbQ-JB-H2s" secondAttribute="trailing" constant="40" id="As4-Lz-CIV"/>
+                            <constraint firstItem="8dS-HB-WKL" firstAttribute="leading" secondItem="zXs-2U-XI8" secondAttribute="leading" constant="40" id="LmW-bK-he3"/>
+                            <constraint firstItem="WbQ-JB-H2s" firstAttribute="centerY" secondItem="ya4-8X-X4q" secondAttribute="centerY" id="Lrd-qy-YAT"/>
+                            <constraint firstItem="WbQ-JB-H2s" firstAttribute="leading" secondItem="zXs-2U-XI8" secondAttribute="leading" constant="40" id="mDd-b1-nX4"/>
+                            <constraint firstItem="zXs-2U-XI8" firstAttribute="trailing" secondItem="8dS-HB-WKL" secondAttribute="trailing" constant="40" id="rPs-Tx-RzA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zXs-2U-XI8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W5C-Oz-ESw"/>
+                    <connections>
+                        <outlet property="textField" destination="WbQ-JB-H2s" id="MbH-Ch-Jn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Df9-Ne-pVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.2" y="77.811094452773617"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dmv-br-mkn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lGN-xe-3j4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U64-gA-Rm2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ff9-7w-6fB" kind="relationship" relationship="rootViewController" id="YCm-gl-d4G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4GY-4C-72A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="77.811094452773617"/>
+        </scene>
+    </scenes>
+</document>
