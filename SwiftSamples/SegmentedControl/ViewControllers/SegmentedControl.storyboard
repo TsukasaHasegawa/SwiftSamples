@@ -18,16 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNF-yB-4wv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNF-yB-4wv">
                                 <rect key="frame" x="8" y="133" width="359" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="xa7-Qo-KV4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Np-GA-6kD">
-                                <rect key="frame" x="32" y="80" width="310" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Np-GA-6kD">
+                                <rect key="frame" x="30" y="80" width="315" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="kLu-ae-73z"/>
+                                </constraints>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -39,6 +43,14 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BDb-OJ-5tg" firstAttribute="trailing" secondItem="YNF-yB-4wv" secondAttribute="trailing" constant="8" id="0oW-B2-CCQ"/>
+                            <constraint firstItem="YNF-yB-4wv" firstAttribute="leading" secondItem="BDb-OJ-5tg" secondAttribute="leading" constant="8" id="Fr7-4S-Mbz"/>
+                            <constraint firstItem="BDb-OJ-5tg" firstAttribute="trailing" secondItem="0Np-GA-6kD" secondAttribute="trailing" constant="30" id="J2Q-IW-Y1w"/>
+                            <constraint firstItem="0Np-GA-6kD" firstAttribute="top" secondItem="BDb-OJ-5tg" secondAttribute="top" constant="16" id="LFR-0u-bjC"/>
+                            <constraint firstItem="0Np-GA-6kD" firstAttribute="leading" secondItem="BDb-OJ-5tg" secondAttribute="leading" constant="30" id="T0l-po-30g"/>
+                            <constraint firstItem="YNF-yB-4wv" firstAttribute="top" secondItem="0Np-GA-6kD" secondAttribute="bottom" constant="25" id="nQv-e7-AjP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BDb-OJ-5tg"/>
                     </view>
                     <navigationItem key="navigationItem" id="o65-vx-dXP"/>

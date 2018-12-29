@@ -31,6 +31,14 @@ class TopViewController: UIViewController {
         }
     }
     
+    private func showDateSampleViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "DateSample", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
+            guard let viewController = navigation.topViewController as? DateSampleViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     private func showWKWebViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "WKWebView", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
@@ -88,6 +96,8 @@ extension TopViewController: UITableViewDelegate {
             switch Top.BasicCell.allCases[indexPath.row] {
             case .segmentedControl:
                 showSegmentedControlViewController()
+            case .dateToString:
+                showDateSampleViewController()
             case .wkWebView:
                 showWKWebViewController()
             case .facebookLogin:

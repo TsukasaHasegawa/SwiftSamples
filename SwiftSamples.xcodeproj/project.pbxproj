@@ -19,6 +19,9 @@
 		65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */; };
 		65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B1A21D5D203005C86CD /* WKWebViewController.swift */; };
 		65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73B1C21D5D2E2005C86CD /* WKWebView.storyboard */; };
+		65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B2121D6B40A005C86CD /* DateConverter.swift */; };
+		65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B2321D6B467005C86CD /* DateSampleViewController.swift */; };
+		65F73B2621D6B485005C86CD /* DateSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73B2521D6B485005C86CD /* DateSample.storyboard */; };
 		AAEE80C30235CCFEDFEBD118 /* Pods_SwiftSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFADE24ACCC5A8AA439795A /* Pods_SwiftSamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FacebookLogin.storyboard; sourceTree = "<group>"; };
 		65F73B1A21D5D203005C86CD /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		65F73B1C21D5D2E2005C86CD /* WKWebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebView.storyboard; sourceTree = "<group>"; };
+		65F73B2121D6B40A005C86CD /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
+		65F73B2321D6B467005C86CD /* DateSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSampleViewController.swift; sourceTree = "<group>"; };
+		65F73B2521D6B485005C86CD /* DateSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DateSample.storyboard; sourceTree = "<group>"; };
 		7E2900524D657F4D11ABD069 /* Pods-SwiftSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		BD29DE3CC10A7C11B5F18448 /* Pods-SwiftSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples.release.xcconfig"; sourceTree = "<group>"; };
 		FCFADE24ACCC5A8AA439795A /* Pods_SwiftSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +84,7 @@
 		65136FCE21C541E20020AAA7 /* SwiftSamples */ = {
 			isa = PBXGroup;
 			children = (
+				65F73B1E21D6B3AB005C86CD /* DateToString */,
 				65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */,
 				65136FDB21C541E40020AAA7 /* Info.plist */,
 				65136FCF21C541E20020AAA7 /* AppDelegate.swift */,
@@ -178,6 +185,32 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		65F73B1E21D6B3AB005C86CD /* DateToString */ = {
+			isa = PBXGroup;
+			children = (
+				65F73B2021D6B3D1005C86CD /* Models */,
+				65F73B1F21D6B3C7005C86CD /* ViewControllers */,
+			);
+			path = DateToString;
+			sourceTree = "<group>";
+		};
+		65F73B1F21D6B3C7005C86CD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65F73B2321D6B467005C86CD /* DateSampleViewController.swift */,
+				65F73B2521D6B485005C86CD /* DateSample.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65F73B2021D6B3D1005C86CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65F73B2121D6B40A005C86CD /* DateConverter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9FC3852C98657C0BF4F9BDA8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +289,7 @@
 				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
 				65136FD721C541E40020AAA7 /* Assets.xcassets in Resources */,
 				65136FD521C541E20020AAA7 /* Top.storyboard in Resources */,
+				65F73B2621D6B485005C86CD /* DateSample.storyboard in Resources */,
 				65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */,
 				65136FEF21CA968C0020AAA7 /* SegmentedControl.storyboard in Resources */,
 			);
@@ -311,6 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */,
+				65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */,
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
 				65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */,
 				65136FD221C541E20020AAA7 /* TopViewController.swift in Sources */,

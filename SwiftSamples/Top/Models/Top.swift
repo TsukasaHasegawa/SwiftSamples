@@ -23,6 +23,7 @@ struct Top {
     
     enum BasicCell: CaseIterable {
         case segmentedControl
+        case dateToString
         case wkWebView
         case facebookLogin
     }
@@ -31,6 +32,8 @@ struct Top {
         switch cell {
         case .segmentedControl:
             return "Segmented Control"
+        case .dateToString:
+            return "Date to String"
         case .wkWebView:
             return "WKWebView"
         case .facebookLogin:
