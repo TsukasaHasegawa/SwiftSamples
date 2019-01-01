@@ -32,6 +32,13 @@ class ScrollableTextFieldViewController: UIViewController {
         notificationCenter.addObserver(self, selector: #selector(ScrollableTextFieldViewController.didReceiveTextFieldHiddenNotification(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
