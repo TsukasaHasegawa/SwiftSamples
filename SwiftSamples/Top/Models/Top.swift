@@ -24,6 +24,7 @@ struct Top {
     enum BasicCell: CaseIterable {
         case segmentedControl
         case pickerTextField
+        case scrollableTextField
         case dateToString
         case wkWebView
         case facebookLogin
@@ -35,6 +36,8 @@ struct Top {
             return "Segmented Control"
         case .pickerTextField:
             return "Picker TextField"
+        case .scrollableTextField:
+            return "Scrollable TextField"
         case .dateToString:
             return "Date to String"
         case .wkWebView:

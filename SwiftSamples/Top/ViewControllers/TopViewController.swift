@@ -39,6 +39,14 @@ class TopViewController: UIViewController {
         }
     }
     
+    private func showScrollableTextFieldViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "ScrollableTextField", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
+            guard let viewController = navigation.topViewController as? ScrollableTextFieldViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     private func showDateSampleViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "DateSample", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
@@ -106,6 +114,8 @@ extension TopViewController: UITableViewDelegate {
                 showSegmentedControlViewController()
             case .pickerTextField:
                 showPickerTextFieldViewController()
+            case .scrollableTextField:
+                showScrollableTextFieldViewController()
             case .dateToString:
                 showDateSampleViewController()
             case .wkWebView:
