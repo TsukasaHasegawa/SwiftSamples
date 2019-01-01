@@ -63,6 +63,14 @@ class TopViewController: UIViewController {
         }
     }
     
+    private func showRealTimeObjectTrackingViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "RealTimeObjectTracking", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
+            guard let viewController = navigation.topViewController as? RealTimeObjectTrackingViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     private func showFacebookLoginViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "FacebookLogin", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
@@ -120,6 +128,8 @@ extension TopViewController: UITableViewDelegate {
                 showDateSampleViewController()
             case .wkWebView:
                 showWKWebViewController()
+            case .realTimeObjectTracking:
+                showRealTimeObjectTrackingViewController()
             case .facebookLogin:
                 showFacebookLoginViewController()
             }

@@ -27,6 +27,7 @@ struct Top {
         case scrollableTextField
         case dateToString
         case wkWebView
+        case realTimeObjectTracking
         case facebookLogin
     }
     
@@ -42,6 +43,8 @@ struct Top {
             return "Date to String"
         case .wkWebView:
             return "WKWebView"
+        case .realTimeObjectTracking:
+            return "Real Time Object Tracking"
         case .facebookLogin:
             return "Facebook Login"
         }

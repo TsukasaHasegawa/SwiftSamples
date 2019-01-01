@@ -20,6 +20,10 @@
 		655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A9521D7DA3B000CADBD /* BirthMonth.swift */; };
 		655B1A9A21D8ACD8000CADBD /* ScrollableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A9921D8ACD8000CADBD /* ScrollableTextField.swift */; };
 		655B1A9C21D8AD21000CADBD /* ScrollableTextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */; };
+		65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */; };
+		65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */; };
+		65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550121DB761E0077F33C /* MobileNet.mlmodel */; };
+		65ED550421DBA7840077F33C /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550321DBA7840077F33C /* Resnet50.mlmodel */; };
 		65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */; };
 		65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */; };
 		65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B1A21D5D203005C86CD /* WKWebViewController.swift */; };
@@ -46,6 +50,10 @@
 		655B1A9521D7DA3B000CADBD /* BirthMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthMonth.swift; sourceTree = "<group>"; };
 		655B1A9921D8ACD8000CADBD /* ScrollableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTextField.swift; sourceTree = "<group>"; };
 		655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollableTextField.storyboard; sourceTree = "<group>"; };
+		65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeObjectTrackingViewController.swift; sourceTree = "<group>"; };
+		65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeObjectTracking.storyboard; sourceTree = "<group>"; };
+		65ED550121DB761E0077F33C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		65ED550321DBA7840077F33C /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		65F73AE121D12CD6005C86CD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		65F73AE221D12CD6005C86CD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +159,7 @@
 		655B1A8721D7C52B000CADBD /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				65ED54FA21DB748D0077F33C /* RealTimeObjectTracking */,
 				65F73B1E21D6B3AB005C86CD /* DateToString */,
 				65F73AE721D130A9005C86CD /* FacebookLogin */,
 				655B1A8B21D7D338000CADBD /* PickerTextField */,
@@ -202,6 +211,33 @@
 				655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65ED54FA21DB748D0077F33C /* RealTimeObjectTracking */ = {
+			isa = PBXGroup;
+			children = (
+				65ED550021DB76080077F33C /* MLModels */,
+				65ED54FB21DB749F0077F33C /* ViewControllers */,
+			);
+			path = RealTimeObjectTracking;
+			sourceTree = "<group>";
+		};
+		65ED54FB21DB749F0077F33C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */,
+				65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65ED550021DB76080077F33C /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				65ED550321DBA7840077F33C /* Resnet50.mlmodel */,
+				65ED550121DB761E0077F33C /* MobileNet.mlmodel */,
+			);
+			path = MLModels;
 			sourceTree = "<group>";
 		};
 		65F73AE021D12CD6005C86CD /* Frameworks */ = {
@@ -357,6 +393,7 @@
 				65F73B2621D6B485005C86CD /* DateSample.storyboard in Resources */,
 				65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */,
 				65136FEF21CA968C0020AAA7 /* SegmentedControl.storyboard in Resources */,
+				65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,11 +447,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ED550421DBA7840077F33C /* Resnet50.mlmodel in Sources */,
 				65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */,
 				65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */,
 				655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */,
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
+				65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */,
 				65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */,
+				65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */,
 				655B1A9A21D8ACD8000CADBD /* ScrollableTextField.swift in Sources */,
 				65136FD221C541E20020AAA7 /* TopViewController.swift in Sources */,
 				65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */,
