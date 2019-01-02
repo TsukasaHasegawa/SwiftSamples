@@ -51,13 +51,13 @@ struct Top {
     }
     
     enum AdvancedCell: CaseIterable {
-        case segmentedTable
+        case pagingTabMenu
     }
     
     static func advancedCellTitle(cell: Top.AdvancedCell) -> String {
         switch cell {
-        case .segmentedTable:
-            return "Segmented TableView"
+        case .pagingTabMenu:
+            return "Paging Tab Menu"
         }
     }
 }

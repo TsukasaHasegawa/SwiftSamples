@@ -24,6 +24,14 @@
 		65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */; };
 		65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550121DB761E0077F33C /* MobileNet.mlmodel */; };
 		65ED550421DBA7840077F33C /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550321DBA7840077F33C /* Resnet50.mlmodel */; };
+		65ED551121DBD46C0077F33C /* PagingTabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED551021DBD46C0077F33C /* PagingTabMenuViewController.swift */; };
+		65ED551321DBD47E0077F33C /* PagingTabMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED551221DBD47E0077F33C /* PagingTabMenu.storyboard */; };
+		65ED551621DBD4B70077F33C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED551521DBD4B70077F33C /* MenuViewController.swift */; };
+		65ED551821DBD4CE0077F33C /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED551721DBD4CE0077F33C /* ContentViewController.swift */; };
+		65ED551C21DBD9390077F33C /* PagingMenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED551B21DBD9390077F33C /* PagingMenuComponent.swift */; };
+		65ED551E21DBDAE60077F33C /* PagingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED551D21DBDAE60077F33C /* PagingMenu.swift */; };
+		65ED552121DBE4980077F33C /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED552021DBE4980077F33C /* MenuViewCell.swift */; };
+		65ED552321DBE4AA0077F33C /* MenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ED552221DBE4AA0077F33C /* MenuViewCell.xib */; };
 		65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */; };
 		65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */; };
 		65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B1A21D5D203005C86CD /* WKWebViewController.swift */; };
@@ -54,6 +62,14 @@
 		65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeObjectTracking.storyboard; sourceTree = "<group>"; };
 		65ED550121DB761E0077F33C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		65ED550321DBA7840077F33C /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		65ED551021DBD46C0077F33C /* PagingTabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabMenuViewController.swift; sourceTree = "<group>"; };
+		65ED551221DBD47E0077F33C /* PagingTabMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PagingTabMenu.storyboard; sourceTree = "<group>"; };
+		65ED551521DBD4B70077F33C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		65ED551721DBD4CE0077F33C /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		65ED551B21DBD9390077F33C /* PagingMenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingMenuComponent.swift; sourceTree = "<group>"; };
+		65ED551D21DBDAE60077F33C /* PagingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingMenu.swift; sourceTree = "<group>"; };
+		65ED552021DBE4980077F33C /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
+		65ED552221DBE4AA0077F33C /* MenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewCell.xib; sourceTree = "<group>"; };
 		65F73AE121D12CD6005C86CD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		65F73AE221D12CD6005C86CD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +118,7 @@
 		65136FCE21C541E20020AAA7 /* SwiftSamples */ = {
 			isa = PBXGroup;
 			children = (
+				65ED550C21DBD2140077F33C /* Advanced */,
 				65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */,
 				65136FDB21C541E40020AAA7 /* Info.plist */,
 				65136FCF21C541E20020AAA7 /* AppDelegate.swift */,
@@ -238,6 +255,61 @@
 				65ED550121DB761E0077F33C /* MobileNet.mlmodel */,
 			);
 			path = MLModels;
+			sourceTree = "<group>";
+		};
+		65ED550C21DBD2140077F33C /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				65ED550D21DBD21E0077F33C /* PagingTabMenu */,
+			);
+			path = Advanced;
+			sourceTree = "<group>";
+		};
+		65ED550D21DBD21E0077F33C /* PagingTabMenu */ = {
+			isa = PBXGroup;
+			children = (
+				65ED551A21DBD8C10077F33C /* Models */,
+				65ED551921DBD8B50077F33C /* Views */,
+				65ED550E21DBD23B0077F33C /* ViewControllers */,
+			);
+			path = PagingTabMenu;
+			sourceTree = "<group>";
+		};
+		65ED550E21DBD23B0077F33C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65ED551721DBD4CE0077F33C /* ContentViewController.swift */,
+				65ED551521DBD4B70077F33C /* MenuViewController.swift */,
+				65ED551221DBD47E0077F33C /* PagingTabMenu.storyboard */,
+				65ED551021DBD46C0077F33C /* PagingTabMenuViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65ED551921DBD8B50077F33C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65ED551F21DBE4810077F33C /* MenuViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65ED551A21DBD8C10077F33C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65ED551B21DBD9390077F33C /* PagingMenuComponent.swift */,
+				65ED551D21DBDAE60077F33C /* PagingMenu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65ED551F21DBE4810077F33C /* MenuViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				65ED552021DBE4980077F33C /* MenuViewCell.swift */,
+				65ED552221DBE4AA0077F33C /* MenuViewCell.xib */,
+			);
+			path = MenuViewCell;
 			sourceTree = "<group>";
 		};
 		65F73AE021D12CD6005C86CD /* Frameworks */ = {
@@ -385,8 +457,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				655B1A9021D7D3F1000CADBD /* PickerTextField.storyboard in Resources */,
+				65ED552321DBE4AA0077F33C /* MenuViewCell.xib in Resources */,
 				65136FDA21C541E40020AAA7 /* LaunchScreen.storyboard in Resources */,
 				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
+				65ED551321DBD47E0077F33C /* PagingTabMenu.storyboard in Resources */,
 				65136FD721C541E40020AAA7 /* Assets.xcassets in Resources */,
 				65136FD521C541E20020AAA7 /* Top.storyboard in Resources */,
 				655B1A9C21D8AD21000CADBD /* ScrollableTextField.storyboard in Resources */,
@@ -448,16 +522,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ED550421DBA7840077F33C /* Resnet50.mlmodel in Sources */,
+				65ED552121DBE4980077F33C /* MenuViewCell.swift in Sources */,
 				65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */,
+				65ED551821DBD4CE0077F33C /* ContentViewController.swift in Sources */,
 				65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */,
+				65ED551E21DBDAE60077F33C /* PagingMenu.swift in Sources */,
 				655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */,
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
 				65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */,
 				65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */,
+				65ED551C21DBD9390077F33C /* PagingMenuComponent.swift in Sources */,
+				65ED551621DBD4B70077F33C /* MenuViewController.swift in Sources */,
 				65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */,
 				655B1A9A21D8ACD8000CADBD /* ScrollableTextField.swift in Sources */,
 				65136FD221C541E20020AAA7 /* TopViewController.swift in Sources */,
 				65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */,
+				65ED551121DBD46C0077F33C /* PagingTabMenuViewController.swift in Sources */,
 				65136FD021C541E20020AAA7 /* AppDelegate.swift in Sources */,
 				65136FED21CA95240020AAA7 /* SegmentedControlViewController.swift in Sources */,
 				655B1A8E21D7D3A1000CADBD /* PickerTextFieldViewController.swift in Sources */,

@@ -25,56 +25,64 @@ class TopViewController: UIViewController {
     
     private func showSegmentedControlViewController() {
         DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "SegmentedControl", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-            guard let viewController = navigation.topViewController as? SegmentedControlViewController else { return }
+            guard let navigation = UIStoryboard(name: "SegmentedControl", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? SegmentedControlViewController else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
     private func showPickerTextFieldViewController() {
         DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "PickerTextField", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-            guard let viewController = navigation.topViewController as? PickerTextFieldViewController else { return }
+            guard let navigation = UIStoryboard(name: "PickerTextField", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? PickerTextFieldViewController else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
     private func showScrollableTextFieldViewController() {
         DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "ScrollableTextField", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-            guard let viewController = navigation.topViewController as? ScrollableTextFieldViewController else { return }
+            guard let navigation = UIStoryboard(name: "ScrollableTextField", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? ScrollableTextFieldViewController else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
     private func showDateSampleViewController() {
         DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "DateSample", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-            guard let viewController = navigation.topViewController as? DateSampleViewController else { return }
+            guard let navigation = UIStoryboard(name: "DateSample", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? DateSampleViewController else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
     private func showWKWebViewController() {
         DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "WKWebView", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-            guard let viewController = navigation.topViewController as? WKWebViewController else { return }
+            guard let navigation = UIStoryboard(name: "WKWebView", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? WKWebViewController else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
     private func showRealTimeObjectTrackingViewController() {
         DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "RealTimeObjectTracking", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-            guard let viewController = navigation.topViewController as? RealTimeObjectTrackingViewController else { return }
+            guard let navigation = UIStoryboard(name: "RealTimeObjectTracking", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? RealTimeObjectTrackingViewController else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
     private func showFacebookLoginViewController() {
         DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "FacebookLogin", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-            guard let viewController = navigation.topViewController as? FacebookLoginViewController else { return }
+            guard let navigation = UIStoryboard(name: "FacebookLogin", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? FacebookLoginViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    private func showPagingTabMenuViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "PagingTabMenu", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? PagingTabMenuViewController else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
@@ -134,7 +142,10 @@ extension TopViewController: UITableViewDelegate {
                 showFacebookLoginViewController()
             }
         case .advanced:
-            print("advanced")
+            switch Top.AdvancedCell.allCases[indexPath.row] {
+            case .pagingTabMenu:
+                showPagingTabMenuViewController()
+            }
         }
     }
     
