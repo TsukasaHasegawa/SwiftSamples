@@ -118,11 +118,11 @@
 		65136FCE21C541E20020AAA7 /* SwiftSamples */ = {
 			isa = PBXGroup;
 			children = (
-				65ED550C21DBD2140077F33C /* Advanced */,
 				65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */,
 				65136FDB21C541E40020AAA7 /* Info.plist */,
 				65136FCF21C541E20020AAA7 /* AppDelegate.swift */,
 				65136FD621C541E40020AAA7 /* Assets.xcassets */,
+				65ED550C21DBD2140077F33C /* Advanced */,
 				655B1A8721D7C52B000CADBD /* Basic */,
 				65136FD821C541E40020AAA7 /* LaunchScreen.storyboard */,
 				65136FE921CA947B0020AAA7 /* Top */,
