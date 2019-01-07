@@ -20,6 +20,9 @@
 		655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A9521D7DA3B000CADBD /* BirthMonth.swift */; };
 		655B1A9A21D8ACD8000CADBD /* ScrollableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A9921D8ACD8000CADBD /* ScrollableTextField.swift */; };
 		655B1A9C21D8AD21000CADBD /* ScrollableTextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */; };
+		6599470C21E3AEFB00C5122E /* maskman.png in Resources */ = {isa = PBXBuildFile; fileRef = 6599470B21E3AEFB00C5122E /* maskman.png */; };
+		6599471021E3AFE600C5122E /* AccessibilityBoldTextAffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599470F21E3AFE600C5122E /* AccessibilityBoldTextAffectViewController.swift */; };
+		6599471221E3B03B00C5122E /* AccessibilityBoldTextEffect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599471121E3B03B00C5122E /* AccessibilityBoldTextEffect.storyboard */; };
 		65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */; };
 		65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */; };
 		65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550121DB761E0077F33C /* MobileNet.mlmodel */; };
@@ -58,6 +61,9 @@
 		655B1A9521D7DA3B000CADBD /* BirthMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthMonth.swift; sourceTree = "<group>"; };
 		655B1A9921D8ACD8000CADBD /* ScrollableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTextField.swift; sourceTree = "<group>"; };
 		655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollableTextField.storyboard; sourceTree = "<group>"; };
+		6599470B21E3AEFB00C5122E /* maskman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maskman.png; sourceTree = "<group>"; };
+		6599470F21E3AFE600C5122E /* AccessibilityBoldTextAffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityBoldTextAffectViewController.swift; sourceTree = "<group>"; };
+		6599471121E3B03B00C5122E /* AccessibilityBoldTextEffect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityBoldTextEffect.storyboard; sourceTree = "<group>"; };
 		65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeObjectTrackingViewController.swift; sourceTree = "<group>"; };
 		65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeObjectTracking.storyboard; sourceTree = "<group>"; };
 		65ED550121DB761E0077F33C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		65136FCE21C541E20020AAA7 /* SwiftSamples */ = {
 			isa = PBXGroup;
 			children = (
+				6599470921E3AEAB00C5122E /* Resources */,
 				65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */,
 				65136FDB21C541E40020AAA7 /* Info.plist */,
 				65136FCF21C541E20020AAA7 /* AppDelegate.swift */,
@@ -176,6 +183,7 @@
 		655B1A8721D7C52B000CADBD /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				6599470D21E3AF2100C5122E /* PreventAccessibilityBoldTextEffectToUIImage */,
 				65F73B1E21D6B3AB005C86CD /* DateToString */,
 				65F73AE721D130A9005C86CD /* FacebookLogin */,
 				655B1A8B21D7D338000CADBD /* PickerTextField */,
@@ -226,6 +234,39 @@
 			children = (
 				655B1A9921D8ACD8000CADBD /* ScrollableTextField.swift */,
 				655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6599470921E3AEAB00C5122E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6599470A21E3AEBB00C5122E /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6599470A21E3AEBB00C5122E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6599470B21E3AEFB00C5122E /* maskman.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6599470D21E3AF2100C5122E /* PreventAccessibilityBoldTextEffectToUIImage */ = {
+			isa = PBXGroup;
+			children = (
+				6599470E21E3AF9900C5122E /* ViewControllers */,
+			);
+			path = PreventAccessibilityBoldTextEffectToUIImage;
+			sourceTree = "<group>";
+		};
+		6599470E21E3AF9900C5122E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6599470F21E3AFE600C5122E /* AccessibilityBoldTextAffectViewController.swift */,
+				6599471121E3B03B00C5122E /* AccessibilityBoldTextEffect.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -467,6 +508,8 @@
 				65F73B2621D6B485005C86CD /* DateSample.storyboard in Resources */,
 				65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */,
 				65136FEF21CA968C0020AAA7 /* SegmentedControl.storyboard in Resources */,
+				6599470C21E3AEFB00C5122E /* maskman.png in Resources */,
+				6599471221E3B03B00C5122E /* AccessibilityBoldTextEffect.storyboard in Resources */,
 				65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +573,7 @@
 				655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */,
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
 				65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */,
+				6599471021E3AFE600C5122E /* AccessibilityBoldTextAffectViewController.swift in Sources */,
 				65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */,
 				65ED551C21DBD9390077F33C /* PagingMenuComponent.swift in Sources */,
 				65ED551621DBD4B70077F33C /* MenuViewController.swift in Sources */,

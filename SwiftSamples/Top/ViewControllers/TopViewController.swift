@@ -23,6 +23,14 @@ class TopViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    private func showAccessibilityBoldTextEffectViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "AccessibilityBoldTextEffect", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+                let viewController = navigation.topViewController as? AccessibilityBoldTextAffectViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     private func showSegmentedControlViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "SegmentedControl", bundle: nil).instantiateInitialViewController() as? UINavigationController,
@@ -126,6 +134,8 @@ extension TopViewController: UITableViewDelegate {
         switch Top.Sections.allCases[indexPath.section] {
         case .basic:
             switch Top.BasicCell.allCases[indexPath.row] {
+            case .accessibilityBoldTextEffect:
+                showAccessibilityBoldTextEffectViewController()
             case .segmentedControl:
                 showSegmentedControlViewController()
             case .pickerTextField:

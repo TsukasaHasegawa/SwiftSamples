@@ -22,6 +22,7 @@ struct Top {
     }
     
     enum BasicCell: CaseIterable {
+        case accessibilityBoldTextEffect
         case segmentedControl
         case pickerTextField
         case scrollableTextField
@@ -33,6 +34,8 @@ struct Top {
     
     static func basicCellTitle(cell: Top.BasicCell) -> String {
         switch cell {
+        case .accessibilityBoldTextEffect:
+            return "Prevent Accessibility Bold Text Effect"
         case .segmentedControl:
             return "Segmented Control"
         case .pickerTextField:
