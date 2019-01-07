@@ -20,6 +20,12 @@
 		655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A9521D7DA3B000CADBD /* BirthMonth.swift */; };
 		655B1A9A21D8ACD8000CADBD /* ScrollableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B1A9921D8ACD8000CADBD /* ScrollableTextField.swift */; };
 		655B1A9C21D8AD21000CADBD /* ScrollableTextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */; };
+		659946DC21DE62A100C5122E /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659946DB21DE62A100C5122E /* CarouselViewController.swift */; };
+		659946DE21DE62DE00C5122E /* Carousel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659946DD21DE62DE00C5122E /* Carousel.storyboard */; };
+		659946E121DE726000C5122E /* CarouselViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659946E021DE726000C5122E /* CarouselViewCell.swift */; };
+		659946E321DE727100C5122E /* CarouselViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659946E221DE727100C5122E /* CarouselViewCell.xib */; };
+		659946E621DE7A3200C5122E /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659946E521DE7A3200C5122E /* Carousel.swift */; };
+		659946E821DE7A4100C5122E /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659946E721DE7A4100C5122E /* CarouselItem.swift */; };
 		65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */; };
 		65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */; };
 		65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550121DB761E0077F33C /* MobileNet.mlmodel */; };
@@ -58,6 +64,12 @@
 		655B1A9521D7DA3B000CADBD /* BirthMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthMonth.swift; sourceTree = "<group>"; };
 		655B1A9921D8ACD8000CADBD /* ScrollableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTextField.swift; sourceTree = "<group>"; };
 		655B1A9B21D8AD21000CADBD /* ScrollableTextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollableTextField.storyboard; sourceTree = "<group>"; };
+		659946DB21DE62A100C5122E /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		659946DD21DE62DE00C5122E /* Carousel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Carousel.storyboard; sourceTree = "<group>"; };
+		659946E021DE726000C5122E /* CarouselViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewCell.swift; sourceTree = "<group>"; };
+		659946E221DE727100C5122E /* CarouselViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselViewCell.xib; sourceTree = "<group>"; };
+		659946E521DE7A3200C5122E /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		659946E721DE7A4100C5122E /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
 		65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeObjectTrackingViewController.swift; sourceTree = "<group>"; };
 		65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeObjectTracking.storyboard; sourceTree = "<group>"; };
 		65ED550121DB761E0077F33C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
@@ -230,6 +242,43 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		659946D921DE624900C5122E /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				659946E421DE7A2100C5122E /* Models */,
+				659946DF21DE723900C5122E /* Views */,
+				659946DA21DE625500C5122E /* ViewControllers */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		659946DA21DE625500C5122E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				659946DB21DE62A100C5122E /* CarouselViewController.swift */,
+				659946DD21DE62DE00C5122E /* Carousel.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		659946DF21DE723900C5122E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				659946E021DE726000C5122E /* CarouselViewCell.swift */,
+				659946E221DE727100C5122E /* CarouselViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		659946E421DE7A2100C5122E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				659946E521DE7A3200C5122E /* Carousel.swift */,
+				659946E721DE7A4100C5122E /* CarouselItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		65ED54FA21DB748D0077F33C /* RealTimeObjectTracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +309,7 @@
 		65ED550C21DBD2140077F33C /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				659946D921DE624900C5122E /* Carousel */,
 				65ED550D21DBD21E0077F33C /* PagingTabMenu */,
 			);
 			path = Advanced;
@@ -458,10 +508,12 @@
 			files = (
 				655B1A9021D7D3F1000CADBD /* PickerTextField.storyboard in Resources */,
 				65ED552321DBE4AA0077F33C /* MenuViewCell.xib in Resources */,
+				659946E321DE727100C5122E /* CarouselViewCell.xib in Resources */,
 				65136FDA21C541E40020AAA7 /* LaunchScreen.storyboard in Resources */,
 				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
 				65ED551321DBD47E0077F33C /* PagingTabMenu.storyboard in Resources */,
 				65136FD721C541E40020AAA7 /* Assets.xcassets in Resources */,
+				659946DE21DE62DE00C5122E /* Carousel.storyboard in Resources */,
 				65136FD521C541E20020AAA7 /* Top.storyboard in Resources */,
 				655B1A9C21D8AD21000CADBD /* ScrollableTextField.storyboard in Resources */,
 				65F73B2621D6B485005C86CD /* DateSample.storyboard in Resources */,
@@ -522,10 +574,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ED550421DBA7840077F33C /* Resnet50.mlmodel in Sources */,
+				659946DC21DE62A100C5122E /* CarouselViewController.swift in Sources */,
+				659946E821DE7A4100C5122E /* CarouselItem.swift in Sources */,
 				65ED552121DBE4980077F33C /* MenuViewCell.swift in Sources */,
 				65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */,
 				65ED551821DBD4CE0077F33C /* ContentViewController.swift in Sources */,
 				65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */,
+				659946E121DE726000C5122E /* CarouselViewCell.swift in Sources */,
 				65ED551E21DBDAE60077F33C /* PagingMenu.swift in Sources */,
 				655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */,
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
@@ -534,6 +589,7 @@
 				65ED551C21DBD9390077F33C /* PagingMenuComponent.swift in Sources */,
 				65ED551621DBD4B70077F33C /* MenuViewController.swift in Sources */,
 				65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */,
+				659946E621DE7A3200C5122E /* Carousel.swift in Sources */,
 				655B1A9A21D8ACD8000CADBD /* ScrollableTextField.swift in Sources */,
 				65136FD221C541E20020AAA7 /* TopViewController.swift in Sources */,
 				65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */,
