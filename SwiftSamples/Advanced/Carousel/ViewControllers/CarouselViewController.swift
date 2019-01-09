@@ -22,16 +22,17 @@ class CarouselViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        //cellectionView.scrollView.delegate = self
-        collectionView.register(UINib(nibName: "CarouselViewCell", bundle: nil), forCellWithReuseIdentifier: "CarouselViewCell")
-        collectionView.showsHorizontalScrollIndicator = false
-        //collectionView.collectionViewLayout = CarouselViewFlowLayout()
+        setupCollectionView()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    private func setupCollectionView() {
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "CarouselViewCell", bundle: nil), forCellWithReuseIdentifier: "CarouselViewCell")
+        collectionView.showsHorizontalScrollIndicator = false
     }
     
     private func changeScale(cell: UICollectionViewCell) {
@@ -60,21 +61,5 @@ extension CarouselViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
-    }
-}
-
-extension CarouselViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: width / 2 - 125.0, bottom: 0, right: width / 2 - 125.0)
-    }
-}
-
-extension CarouselViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        //スクロールした時の処理をここに追加する。
-//        let cells = self.collectionView.visibleCells
-//        for cell in cells {
-//            changeScale(cell: cell)
-//        }
     }
 }

@@ -13,7 +13,10 @@ class CarouselViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     var cellWidth: CGFloat {
-        return self.frame.size.width
+        return 250.0
+    }
+    var cellHeight: CGFloat {
+        return 400.0
     }
     
     override func awakeFromNib() {
