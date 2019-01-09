@@ -52,12 +52,15 @@ struct Top {
     
     enum AdvancedCell: CaseIterable {
         case pagingTabMenu
+        case carousel
     }
     
     static func advancedCellTitle(cell: Top.AdvancedCell) -> String {
         switch cell {
         case .pagingTabMenu:
             return "Paging Tab Menu"
+        case .carousel:
+            return "Carousel"
         }
     }
 }

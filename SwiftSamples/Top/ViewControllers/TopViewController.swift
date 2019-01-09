@@ -86,6 +86,14 @@ class TopViewController: UIViewController {
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
+    
+    private func showCarouselViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "Carousel", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+                let viewController = navigation.topViewController as? CarouselViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 
 }
 
@@ -145,6 +153,8 @@ extension TopViewController: UITableViewDelegate {
             switch Top.AdvancedCell.allCases[indexPath.row] {
             case .pagingTabMenu:
                 showPagingTabMenuViewController()
+            case .carousel:
+                showCarouselViewController()
             }
         }
     }
