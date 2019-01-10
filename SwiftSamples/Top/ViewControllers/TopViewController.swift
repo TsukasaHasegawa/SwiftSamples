@@ -94,6 +94,14 @@ class TopViewController: UIViewController {
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
+    
+    private func showBadgeBarButtonItemViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "BadgeBarButtonItem", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+            let viewController = navigation.topViewController as? BadgeBarButtonItemViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 
 }
 
@@ -112,6 +120,8 @@ extension TopViewController: UITableViewDataSource {
             return Top.BasicCell.allCases.count
         case .advanced:
             return Top.AdvancedCell.allCases.count
+        case .badge:
+            return Top.BadgeCell.allCases.count
         }
     }
     
@@ -123,6 +133,9 @@ extension TopViewController: UITableViewDataSource {
             return cell
         case .advanced:
             cell.textLabel?.text = Top.advancedCellTitle(cell: Top.AdvancedCell.allCases[indexPath.row])
+            return cell
+        case .badge:
+            cell.textLabel?.text = Top.badgeCellTitle(cell: Top.BadgeCell.allCases[indexPath.row])
             return cell
         }
     }
@@ -155,6 +168,11 @@ extension TopViewController: UITableViewDelegate {
                 showPagingTabMenuViewController()
             case .carousel:
                 showCarouselViewController()
+            }
+        case .badge:
+            switch Top.BadgeCell.allCases[indexPath.row] {
+            case .barButtonItem:
+                showBadgeBarButtonItemViewController()
             }
         }
     }
