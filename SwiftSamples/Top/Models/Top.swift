@@ -10,6 +10,7 @@ struct Top {
     enum Sections: CaseIterable {
         case basic
         case advanced
+        case badge
     }
     
     static func sectionTitle(section: Top.Sections) -> String {
@@ -18,6 +19,8 @@ struct Top {
             return "Basic"
         case .advanced:
             return "Advanced"
+        case .badge:
+            return "Badge"
         }
     }
     
@@ -61,6 +64,17 @@ struct Top {
             return "Paging Tab Menu"
         case .carousel:
             return "Carousel"
+        }
+    }
+    
+    enum BadgeCell: CaseIterable {
+        case barButtonItem
+    }
+    
+    static func badgeCellTitle(cell: Top.BadgeCell) -> String {
+        switch cell {
+        case .barButtonItem:
+            return "UIBarButtonItem + Badge"
         }
     }
 }

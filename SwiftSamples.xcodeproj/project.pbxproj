@@ -27,6 +27,10 @@
 		659946E621DE7A3200C5122E /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659946E521DE7A3200C5122E /* Carousel.swift */; };
 		659946E821DE7A4100C5122E /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659946E721DE7A4100C5122E /* CarouselItem.swift */; };
 		6599471421E64D1300C5122E /* CarouselViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599471321E64D1300C5122E /* CarouselViewFlowLayout.swift */; };
+		6599471C21E7614600C5122E /* BadgeBarButtonItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599471B21E7614600C5122E /* BadgeBarButtonItemViewController.swift */; };
+		6599471E21E762D400C5122E /* BadgeBarButtonItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599471D21E762D400C5122E /* BadgeBarButtonItem.storyboard */; };
+		6599472021E7651500C5122E /* BadgeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599471F21E7651500C5122E /* BadgeBarButtonItem.swift */; };
+		6599472621E7825F00C5122E /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6599472521E7825F00C5122E /* menu.png */; };
 		65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */; };
 		65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */; };
 		65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550121DB761E0077F33C /* MobileNet.mlmodel */; };
@@ -72,6 +76,10 @@
 		659946E521DE7A3200C5122E /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		659946E721DE7A4100C5122E /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
 		6599471321E64D1300C5122E /* CarouselViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewFlowLayout.swift; sourceTree = "<group>"; };
+		6599471B21E7614600C5122E /* BadgeBarButtonItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBarButtonItemViewController.swift; sourceTree = "<group>"; };
+		6599471D21E762D400C5122E /* BadgeBarButtonItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BadgeBarButtonItem.storyboard; sourceTree = "<group>"; };
+		6599471F21E7651500C5122E /* BadgeBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBarButtonItem.swift; sourceTree = "<group>"; };
+		6599472521E7825F00C5122E /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeObjectTrackingViewController.swift; sourceTree = "<group>"; };
 		65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeObjectTracking.storyboard; sourceTree = "<group>"; };
 		65ED550121DB761E0077F33C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
@@ -137,8 +145,10 @@
 				65136FCF21C541E20020AAA7 /* AppDelegate.swift */,
 				65136FD621C541E40020AAA7 /* Assets.xcassets */,
 				65ED550C21DBD2140077F33C /* Advanced */,
+				6599471621E75F8800C5122E /* Badge */,
 				655B1A8721D7C52B000CADBD /* Basic */,
 				65136FD821C541E40020AAA7 /* LaunchScreen.storyboard */,
+				6599472121E77ACF00C5122E /* Resources */,
 				65136FE921CA947B0020AAA7 /* Top */,
 			);
 			path = SwiftSamples;
@@ -280,6 +290,56 @@
 				6599471321E64D1300C5122E /* CarouselViewFlowLayout.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6599471621E75F8800C5122E /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				6599471721E75FB900C5122E /* BarButtonItem */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
+		6599471721E75FB900C5122E /* BarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				6599471A21E7610E00C5122E /* CustomUIParts */,
+				6599471821E75FDE00C5122E /* ViewControllers */,
+			);
+			path = BarButtonItem;
+			sourceTree = "<group>";
+		};
+		6599471821E75FDE00C5122E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6599471B21E7614600C5122E /* BadgeBarButtonItemViewController.swift */,
+				6599471D21E762D400C5122E /* BadgeBarButtonItem.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6599471A21E7610E00C5122E /* CustomUIParts */ = {
+			isa = PBXGroup;
+			children = (
+				6599471F21E7651500C5122E /* BadgeBarButtonItem.swift */,
+			);
+			path = CustomUIParts;
+			sourceTree = "<group>";
+		};
+		6599472121E77ACF00C5122E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6599472221E77ADA00C5122E /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6599472221E77ADA00C5122E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6599472521E7825F00C5122E /* menu.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		65ED54FA21DB748D0077F33C /* RealTimeObjectTracking */ = {
@@ -509,6 +569,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6599472621E7825F00C5122E /* menu.png in Resources */,
 				655B1A9021D7D3F1000CADBD /* PickerTextField.storyboard in Resources */,
 				65ED552321DBE4AA0077F33C /* MenuViewCell.xib in Resources */,
 				659946E321DE727100C5122E /* CarouselViewCell.xib in Resources */,
@@ -516,6 +577,7 @@
 				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
 				65ED551321DBD47E0077F33C /* PagingTabMenu.storyboard in Resources */,
 				65136FD721C541E40020AAA7 /* Assets.xcassets in Resources */,
+				6599471E21E762D400C5122E /* BadgeBarButtonItem.storyboard in Resources */,
 				659946DE21DE62DE00C5122E /* Carousel.storyboard in Resources */,
 				65136FD521C541E20020AAA7 /* Top.storyboard in Resources */,
 				655B1A9C21D8AD21000CADBD /* ScrollableTextField.storyboard in Resources */,
@@ -589,6 +651,7 @@
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
 				6599471421E64D1300C5122E /* CarouselViewFlowLayout.swift in Sources */,
 				65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */,
+				6599472021E7651500C5122E /* BadgeBarButtonItem.swift in Sources */,
 				65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */,
 				65ED551C21DBD9390077F33C /* PagingMenuComponent.swift in Sources */,
 				65ED551621DBD4B70077F33C /* MenuViewController.swift in Sources */,
@@ -601,6 +664,7 @@
 				65136FD021C541E20020AAA7 /* AppDelegate.swift in Sources */,
 				65136FED21CA95240020AAA7 /* SegmentedControlViewController.swift in Sources */,
 				655B1A8E21D7D3A1000CADBD /* PickerTextFieldViewController.swift in Sources */,
+				6599471C21E7614600C5122E /* BadgeBarButtonItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
