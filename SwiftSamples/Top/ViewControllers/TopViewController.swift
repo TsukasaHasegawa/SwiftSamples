@@ -102,6 +102,14 @@ class TopViewController: UIViewController {
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
+    
+    private func showBadgeTableViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "BadgeTable", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+                let viewController = navigation.topViewController as? BadgeTableViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 
 }
 
@@ -173,6 +181,8 @@ extension TopViewController: UITableViewDelegate {
             switch Top.BadgeCell.allCases[indexPath.row] {
             case .barButtonItem:
                 showBadgeBarButtonItemViewController()
+            case .tableViewCell:
+                showBadgeTableViewController()
             }
         }
     }

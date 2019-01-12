@@ -69,12 +69,15 @@ struct Top {
     
     enum BadgeCell: CaseIterable {
         case barButtonItem
+        case tableViewCell
     }
     
     static func badgeCellTitle(cell: Top.BadgeCell) -> String {
         switch cell {
         case .barButtonItem:
             return "UIBarButtonItem + Badge"
+        case .tableViewCell:
+            return "UITableViewCell + Badge"
         }
     }
 }
