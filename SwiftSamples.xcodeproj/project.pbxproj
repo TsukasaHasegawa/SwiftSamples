@@ -31,6 +31,12 @@
 		6599471E21E762D400C5122E /* BadgeBarButtonItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599471D21E762D400C5122E /* BadgeBarButtonItem.storyboard */; };
 		6599472021E7651500C5122E /* BadgeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599471F21E7651500C5122E /* BadgeBarButtonItem.swift */; };
 		6599472621E7825F00C5122E /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6599472521E7825F00C5122E /* menu.png */; };
+		6599472A21E97AC800C5122E /* BadgeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599472921E97AC800C5122E /* BadgeTableViewController.swift */; };
+		6599472C21E97B2400C5122E /* BadgeTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6599472B21E97B2400C5122E /* BadgeTable.storyboard */; };
+		6599472F21E97C2200C5122E /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599472E21E97C2200C5122E /* BadgeTableViewCell.swift */; };
+		6599473121E97C5E00C5122E /* BadgeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6599473021E97C5E00C5122E /* BadgeTableViewCell.xib */; };
+		6599473321E97F8600C5122E /* BadgeTableControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599473221E97F8600C5122E /* BadgeTableControlCell.swift */; };
+		6599473521E97FE300C5122E /* BadgeTableControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6599473421E97FE300C5122E /* BadgeTableControlCell.xib */; };
 		65ED54FD21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */; };
 		65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */; };
 		65ED550221DB761E0077F33C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65ED550121DB761E0077F33C /* MobileNet.mlmodel */; };
@@ -80,6 +86,12 @@
 		6599471D21E762D400C5122E /* BadgeBarButtonItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BadgeBarButtonItem.storyboard; sourceTree = "<group>"; };
 		6599471F21E7651500C5122E /* BadgeBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBarButtonItem.swift; sourceTree = "<group>"; };
 		6599472521E7825F00C5122E /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		6599472921E97AC800C5122E /* BadgeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewController.swift; sourceTree = "<group>"; };
+		6599472B21E97B2400C5122E /* BadgeTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BadgeTable.storyboard; sourceTree = "<group>"; };
+		6599472E21E97C2200C5122E /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
+		6599473021E97C5E00C5122E /* BadgeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeTableViewCell.xib; sourceTree = "<group>"; };
+		6599473221E97F8600C5122E /* BadgeTableControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableControlCell.swift; sourceTree = "<group>"; };
+		6599473421E97FE300C5122E /* BadgeTableControlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeTableControlCell.xib; sourceTree = "<group>"; };
 		65ED54FC21DB74C60077F33C /* RealTimeObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeObjectTrackingViewController.swift; sourceTree = "<group>"; };
 		65ED54FE21DB74D70077F33C /* RealTimeObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeObjectTracking.storyboard; sourceTree = "<group>"; };
 		65ED550121DB761E0077F33C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
@@ -295,6 +307,7 @@
 		6599471621E75F8800C5122E /* Badge */ = {
 			isa = PBXGroup;
 			children = (
+				6599472721E97A8600C5122E /* TableViewCell */,
 				6599471721E75FB900C5122E /* BarButtonItem */,
 			);
 			path = Badge;
@@ -312,8 +325,8 @@
 		6599471821E75FDE00C5122E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6599471B21E7614600C5122E /* BadgeBarButtonItemViewController.swift */,
 				6599471D21E762D400C5122E /* BadgeBarButtonItem.storyboard */,
+				6599471B21E7614600C5122E /* BadgeBarButtonItemViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -340,6 +353,35 @@
 				6599472521E7825F00C5122E /* menu.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		6599472721E97A8600C5122E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6599472821E97AA300C5122E /* ViewControllers */,
+				6599472D21E97BBE00C5122E /* Views */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		6599472821E97AA300C5122E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6599472B21E97B2400C5122E /* BadgeTable.storyboard */,
+				6599472921E97AC800C5122E /* BadgeTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6599472D21E97BBE00C5122E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6599473221E97F8600C5122E /* BadgeTableControlCell.swift */,
+				6599473421E97FE300C5122E /* BadgeTableControlCell.xib */,
+				6599472E21E97C2200C5122E /* BadgeTableViewCell.swift */,
+				6599473021E97C5E00C5122E /* BadgeTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		65ED54FA21DB748D0077F33C /* RealTimeObjectTracking */ = {
@@ -570,11 +612,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6599472621E7825F00C5122E /* menu.png in Resources */,
+				6599472C21E97B2400C5122E /* BadgeTable.storyboard in Resources */,
 				655B1A9021D7D3F1000CADBD /* PickerTextField.storyboard in Resources */,
 				65ED552321DBE4AA0077F33C /* MenuViewCell.xib in Resources */,
 				659946E321DE727100C5122E /* CarouselViewCell.xib in Resources */,
 				65136FDA21C541E40020AAA7 /* LaunchScreen.storyboard in Resources */,
 				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
+				6599473121E97C5E00C5122E /* BadgeTableViewCell.xib in Resources */,
 				65ED551321DBD47E0077F33C /* PagingTabMenu.storyboard in Resources */,
 				65136FD721C541E40020AAA7 /* Assets.xcassets in Resources */,
 				6599471E21E762D400C5122E /* BadgeBarButtonItem.storyboard in Resources */,
@@ -584,6 +628,7 @@
 				65F73B2621D6B485005C86CD /* DateSample.storyboard in Resources */,
 				65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */,
 				65136FEF21CA968C0020AAA7 /* SegmentedControl.storyboard in Resources */,
+				6599473521E97FE300C5122E /* BadgeTableControlCell.xib in Resources */,
 				65ED54FF21DB74D70077F33C /* RealTimeObjectTracking.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,12 +685,15 @@
 			files = (
 				65ED550421DBA7840077F33C /* Resnet50.mlmodel in Sources */,
 				659946DC21DE62A100C5122E /* CarouselViewController.swift in Sources */,
+				6599472F21E97C2200C5122E /* BadgeTableViewCell.swift in Sources */,
 				659946E821DE7A4100C5122E /* CarouselItem.swift in Sources */,
 				65ED552121DBE4980077F33C /* MenuViewCell.swift in Sources */,
 				65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */,
 				65ED551821DBD4CE0077F33C /* ContentViewController.swift in Sources */,
 				65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */,
+				6599472A21E97AC800C5122E /* BadgeTableViewController.swift in Sources */,
 				659946E121DE726000C5122E /* CarouselViewCell.swift in Sources */,
+				6599473321E97F8600C5122E /* BadgeTableControlCell.swift in Sources */,
 				65ED551E21DBDAE60077F33C /* PagingMenu.swift in Sources */,
 				655B1A9621D7DA3B000CADBD /* BirthMonth.swift in Sources */,
 				65136FE821C543AF0020AAA7 /* Top.swift in Sources */,
