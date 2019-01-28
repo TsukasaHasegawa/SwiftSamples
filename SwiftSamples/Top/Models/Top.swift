@@ -32,6 +32,7 @@ struct Top {
         case wkWebView
         case realTimeObjectTracking
         case facebookLogin
+        case overlay
     }
     
     static func basicCellTitle(cell: Top.BasicCell) -> String {
@@ -50,6 +51,8 @@ struct Top {
             return "Real Time Object Tracking"
         case .facebookLogin:
             return "Facebook Login"
+        case .overlay:
+            return "Overlay Menu"
         }
     }
     
