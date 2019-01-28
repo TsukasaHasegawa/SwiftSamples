@@ -46,12 +46,29 @@
                                     <action selector="didTapDecreaseButton:" destination="oCf-5Z-qTu" eventType="touchUpInside" id="ii4-H4-WH6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juA-DG-Yw4">
+                                <rect key="frame" x="120" y="434" width="135" height="44"/>
+                                <color key="backgroundColor" red="0.1095236156" green="0.90554166670000003" blue="0.55167872169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4kP-Oc-hiW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show Alert!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAlertButton:" destination="oCf-5Z-qTu" eventType="touchUpInside" id="Q4g-AS-PzX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="n41-2I-dmA" firstAttribute="trailing" secondItem="sn7-cF-nXf" secondAttribute="trailing" constant="120" id="03d-1R-7uX"/>
+                            <constraint firstItem="n41-2I-dmA" firstAttribute="trailing" secondItem="juA-DG-Yw4" secondAttribute="trailing" constant="120" id="C2n-3U-GqL"/>
                             <constraint firstItem="gOE-CK-uAH" firstAttribute="leading" secondItem="n41-2I-dmA" secondAttribute="leading" constant="120" id="Jdv-4N-fTr"/>
+                            <constraint firstItem="juA-DG-Yw4" firstAttribute="leading" secondItem="n41-2I-dmA" secondAttribute="leading" constant="120" id="cEU-KG-8jo"/>
                             <constraint firstItem="gOE-CK-uAH" firstAttribute="top" secondItem="sn7-cF-nXf" secondAttribute="bottom" constant="36" id="fer-9g-RE8"/>
+                            <constraint firstItem="juA-DG-Yw4" firstAttribute="top" secondItem="gOE-CK-uAH" secondAttribute="bottom" constant="36" id="hIa-M5-U4j"/>
                             <constraint firstItem="n41-2I-dmA" firstAttribute="trailing" secondItem="gOE-CK-uAH" secondAttribute="trailing" constant="120" id="qRV-Ip-qNZ"/>
                             <constraint firstItem="sn7-cF-nXf" firstAttribute="top" secondItem="n41-2I-dmA" secondAttribute="top" constant="210" id="w9V-Ju-Red"/>
                             <constraint firstItem="sn7-cF-nXf" firstAttribute="leading" secondItem="n41-2I-dmA" secondAttribute="leading" constant="120" id="z6n-kp-slY"/>
