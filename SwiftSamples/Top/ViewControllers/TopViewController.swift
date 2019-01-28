@@ -79,6 +79,14 @@ class TopViewController: UIViewController {
         }
     }
     
+    private func showOverlayMatViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "OverlayMat", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+                let viewController = navigation.topViewController as? OverlayMatViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     private func showPagingTabMenuViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "PagingTabMenu", bundle: nil).instantiateInitialViewController() as? UINavigationController,
@@ -169,6 +177,8 @@ extension TopViewController: UITableViewDelegate {
                 showRealTimeObjectTrackingViewController()
             case .facebookLogin:
                 showFacebookLoginViewController()
+            case .overlay:
+                showOverlayMatViewController()
             }
         case .advanced:
             switch Top.AdvancedCell.allCases[indexPath.row] {
