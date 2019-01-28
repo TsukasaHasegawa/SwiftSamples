@@ -53,7 +53,11 @@ class BadgeBarButtonItem: UIBarButtonItem {
         if badgeNumber >= 99 {
             badgeNumber = 99
         }
-        updateBadge()
+        if #available(iOS 11.0, *) {
+            updateBadgeOnStackView()
+        } else {
+            updateBadgeOnUIBarButtonItem()
+        }
     }
     
     func decreaseBadge() {
@@ -61,20 +65,35 @@ class BadgeBarButtonItem: UIBarButtonItem {
         if badgeNumber <= 0 {
             badgeNumber = 0
         }
-        updateBadge()
+        if #available(iOS 11.0, *) {
+            updateBadgeOnStackView()
+        } else {
+            updateBadgeOnUIBarButtonItem()
+        }
     }
     
-    private func updateBadge() {
+    private func updateBadgeOnUIBarButtonItem() {
         guard let badge = self.badge,
             let view = self.value(forKey: "view") as? UIView else { return }
         if badgeNumber <= 0 {
             self.badge?.removeFromSuperview()
             return
         }
-        if badgeNumber >= 99 {
-            badgeNumber = 99
-        }
         badge.text = "\(badgeNumber)"
         view.addSubview(badge)
+    }
+    
+    @available(iOS 11, *)
+    private func updateBadgeOnStackView() {
+        guard let badge = self.badge,
+            let view = self.value(forKey: "view") as? UIView else { return }
+        if badgeNumber <= 0 {
+            self.badge?.removeFromSuperview()
+            return
+        }
+        badge.text = "\(badgeNumber)"
+        for subview in view.subviews where subview.isKind(of: UIButton.self){
+            subview.addSubview(badge)
+        }
     }
 }

@@ -20,6 +20,10 @@ class BadgeBarButtonItemViewController: UIViewController {
         setupBarButtonItem()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -36,5 +40,23 @@ class BadgeBarButtonItemViewController: UIViewController {
     
     @IBAction func didTapDecreaseButton(_ sender: UIButton) {
         self.barButtonItem?.decreaseBadge()
+    }
+    /*
+     * Alertを表示するとUIBarbuttonItemのpropertyであるimageに設定した画像の後ろにバッジが隠れることがあるため
+     * Alertを表示する処理を追加
+     */
+    @IBAction func didTapAlertButton(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Alert", message: "Sample of alert...", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("OK")
+        })
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("Cancel")
+        })
+        alertController.addAction(cancelAction)
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
     }
 }
