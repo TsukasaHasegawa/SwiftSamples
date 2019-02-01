@@ -33,6 +33,7 @@ struct Top {
         case realTimeObjectTracking
         case facebookLogin
         case overlay
+        case escaping
     }
     
     static func basicCellTitle(cell: Top.BasicCell) -> String {
@@ -53,6 +54,8 @@ struct Top {
             return "Facebook Login"
         case .overlay:
             return "Overlay Menu"
+        case .escaping:
+            return "@escaping"
         }
     }
     

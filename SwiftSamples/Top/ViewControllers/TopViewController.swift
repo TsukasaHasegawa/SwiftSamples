@@ -23,6 +23,8 @@ class TopViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    // MARK: - Show Basic View
+    
     private func showSegmentedControlViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "SegmentedControl", bundle: nil).instantiateInitialViewController() as? UINavigationController,
@@ -87,6 +89,16 @@ class TopViewController: UIViewController {
         }
     }
     
+    private func showEscapingRefererViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "EscapingReferer", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+                let viewController = navigation.topViewController as? EscapingRefererViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    // Mark: - Show Advance View
+    
     private func showPagingTabMenuViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "PagingTabMenu", bundle: nil).instantiateInitialViewController() as? UINavigationController,
@@ -102,6 +114,8 @@ class TopViewController: UIViewController {
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
+    
+    // Mark: - Show Badge View
     
     private func showBadgeBarButtonItemViewController() {
         DispatchQueue.main.async {
@@ -179,6 +193,8 @@ extension TopViewController: UITableViewDelegate {
                 showFacebookLoginViewController()
             case .overlay:
                 showOverlayMatViewController()
+            case .escaping:
+                showEscapingRefererViewController()
             }
         case .advanced:
             switch Top.AdvancedCell.allCases[indexPath.row] {
