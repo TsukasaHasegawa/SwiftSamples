@@ -34,6 +34,7 @@ struct Top {
         case facebookLogin
         case overlay
         case escaping
+        case variableHeightTable
     }
     
     static func basicCellTitle(cell: Top.BasicCell) -> String {
@@ -56,6 +57,8 @@ struct Top {
             return "Overlay Menu"
         case .escaping:
             return "@escaping"
+        case .variableHeightTable:
+            return "Variable Height Table"
         }
     }
     

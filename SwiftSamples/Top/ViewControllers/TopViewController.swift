@@ -97,6 +97,14 @@ class TopViewController: UIViewController {
         }
     }
     
+    private func showVariableHeightTableViewController() {
+        DispatchQueue.main.async {
+            guard let navigation = UIStoryboard(name: "VariableHeightTable", bundle: nil).instantiateInitialViewController() as? UINavigationController,
+                let viewController = navigation.topViewController as? VariableHeightTableViewController else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     // Mark: - Show Advance View
     
     private func showPagingTabMenuViewController() {
@@ -195,6 +203,8 @@ extension TopViewController: UITableViewDelegate {
                 showOverlayMatViewController()
             case .escaping:
                 showEscapingRefererViewController()
+            case .variableHeightTable:
+                showVariableHeightTableViewController()
             }
         case .advanced:
             switch Top.AdvancedCell.allCases[indexPath.row] {
