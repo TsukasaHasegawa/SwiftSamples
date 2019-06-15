@@ -61,14 +61,11 @@
 		65ED551E21DBDAE60077F33C /* PagingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED551D21DBDAE60077F33C /* PagingMenu.swift */; };
 		65ED552121DBE4980077F33C /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED552021DBE4980077F33C /* MenuViewCell.swift */; };
 		65ED552321DBE4AA0077F33C /* MenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ED552221DBE4AA0077F33C /* MenuViewCell.xib */; };
-		65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */; };
-		65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */; };
 		65F73B1B21D5D203005C86CD /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B1A21D5D203005C86CD /* WKWebViewController.swift */; };
 		65F73B1D21D5D2E2005C86CD /* WKWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73B1C21D5D2E2005C86CD /* WKWebView.storyboard */; };
 		65F73B2221D6B40A005C86CD /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B2121D6B40A005C86CD /* DateConverter.swift */; };
 		65F73B2421D6B467005C86CD /* DateSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F73B2321D6B467005C86CD /* DateSampleViewController.swift */; };
 		65F73B2621D6B485005C86CD /* DateSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F73B2521D6B485005C86CD /* DateSample.storyboard */; };
-		AAEE80C30235CCFEDFEBD118 /* Pods_SwiftSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFADE24ACCC5A8AA439795A /* Pods_SwiftSamples.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,17 +127,12 @@
 		65ED552221DBE4AA0077F33C /* MenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewCell.xib; sourceTree = "<group>"; };
 		65F73AE121D12CD6005C86CD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		65F73AE221D12CD6005C86CD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "SDK/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
-		65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		65F73AEA21D131C6005C86CD /* SwiftSamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftSamples.entitlements; sourceTree = "<group>"; };
-		65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FacebookLogin.storyboard; sourceTree = "<group>"; };
 		65F73B1A21D5D203005C86CD /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		65F73B1C21D5D2E2005C86CD /* WKWebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebView.storyboard; sourceTree = "<group>"; };
 		65F73B2121D6B40A005C86CD /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		65F73B2321D6B467005C86CD /* DateSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSampleViewController.swift; sourceTree = "<group>"; };
 		65F73B2521D6B485005C86CD /* DateSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DateSample.storyboard; sourceTree = "<group>"; };
-		7E2900524D657F4D11ABD069 /* Pods-SwiftSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples.debug.xcconfig"; sourceTree = "<group>"; };
-		BD29DE3CC10A7C11B5F18448 /* Pods-SwiftSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples.release.xcconfig"; sourceTree = "<group>"; };
-		FCFADE24ACCC5A8AA439795A /* Pods_SwiftSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +140,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEE80C30235CCFEDFEBD118 /* Pods_SwiftSamples.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +152,6 @@
 				65136FCE21C541E20020AAA7 /* SwiftSamples */,
 				65136FCD21C541E20020AAA7 /* Products */,
 				65F73AE021D12CD6005C86CD /* Frameworks */,
-				9FC3852C98657C0BF4F9BDA8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,7 +228,6 @@
 			children = (
 				65F73B1E21D6B3AB005C86CD /* DateToString */,
 				656292092204B127003AB70D /* Escaping */,
-				65F73AE721D130A9005C86CD /* FacebookLogin */,
 				656291FB21FF3BD0003AB70D /* Overlay */,
 				655B1A8B21D7D338000CADBD /* PickerTextField */,
 				65ED54FA21DB748D0077F33C /* RealTimeObjectTracking */,
@@ -604,26 +593,8 @@
 			children = (
 				65F73AE121D12CD6005C86CD /* FBSDKCoreKit.framework */,
 				65F73AE221D12CD6005C86CD /* FBSDKLoginKit.framework */,
-				FCFADE24ACCC5A8AA439795A /* Pods_SwiftSamples.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		65F73AE721D130A9005C86CD /* FacebookLogin */ = {
-			isa = PBXGroup;
-			children = (
-				65F73AED21D133A0005C86CD /* ViewControllers */,
-			);
-			path = FacebookLogin;
-			sourceTree = "<group>";
-		};
-		65F73AED21D133A0005C86CD /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				65F73AE821D130C8005C86CD /* FacebookLoginViewController.swift */,
-				65F73AEB21D13361005C86CD /* FacebookLogin.storyboard */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		65F73B1821D5D19E005C86CD /* WKWebView */ = {
@@ -669,15 +640,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		9FC3852C98657C0BF4F9BDA8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7E2900524D657F4D11ABD069 /* Pods-SwiftSamples.debug.xcconfig */,
-				BD29DE3CC10A7C11B5F18448 /* Pods-SwiftSamples.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -685,11 +647,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65136FDE21C541E40020AAA7 /* Build configuration list for PBXNativeTarget "SwiftSamples" */;
 			buildPhases = (
-				91F9A286E8FE6CEDCD503565 /* [CP] Check Pods Manifest.lock */,
 				65136FC821C541E20020AAA7 /* Sources */,
 				65136FC921C541E20020AAA7 /* Frameworks */,
 				65136FCA21C541E20020AAA7 /* Resources */,
-				3FE8D8690D92A9AA68068D68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -751,7 +711,6 @@
 				6562920321FF3D88003AB70D /* OverlayMat.storyboard in Resources */,
 				659946E321DE727100C5122E /* CarouselViewCell.xib in Resources */,
 				65136FDA21C541E40020AAA7 /* LaunchScreen.storyboard in Resources */,
-				65F73AEC21D13361005C86CD /* FacebookLogin.storyboard in Resources */,
 				6599473121E97C5E00C5122E /* BadgeTableViewCell.xib in Resources */,
 				65ED551321DBD47E0077F33C /* PagingTabMenu.storyboard in Resources */,
 				656292112204B339003AB70D /* EscapingReferer.storyboard in Resources */,
@@ -771,49 +730,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3FE8D8690D92A9AA68068D68 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSamples/Pods-SwiftSamples-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91F9A286E8FE6CEDCD503565 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftSamples-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65136FC821C541E20020AAA7 /* Sources */ = {
@@ -849,7 +765,6 @@
 				659946E621DE7A3200C5122E /* Carousel.swift in Sources */,
 				655B1A9A21D8ACD8000CADBD /* ScrollableTextField.swift in Sources */,
 				65136FD221C541E20020AAA7 /* TopViewController.swift in Sources */,
-				65F73AE921D130C8005C86CD /* FacebookLoginViewController.swift in Sources */,
 				65ED551121DBD46C0077F33C /* PagingTabMenuViewController.swift in Sources */,
 				656291FF21FF3C76003AB70D /* OverlayMatViewController.swift in Sources */,
 				65136FD021C541E20020AAA7 /* AppDelegate.swift in Sources */,
@@ -1000,7 +915,6 @@
 		};
 		65136FDF21C541E40020AAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E2900524D657F4D11ABD069 /* Pods-SwiftSamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftSamples/SwiftSamples.entitlements;
@@ -1025,7 +939,6 @@
 		};
 		65136FE021C541E40020AAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD29DE3CC10A7C11B5F18448 /* Pods-SwiftSamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftSamples/SwiftSamples.entitlements;

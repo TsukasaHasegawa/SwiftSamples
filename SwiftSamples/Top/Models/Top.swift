@@ -31,7 +31,6 @@ struct Top {
         case dateToString
         case wkWebView
         case realTimeObjectTracking
-        case facebookLogin
         case overlay
         case escaping
         case variableHeightTable
@@ -51,8 +50,6 @@ struct Top {
             return "WKWebView"
         case .realTimeObjectTracking:
             return "Real Time Object Tracking"
-        case .facebookLogin:
-            return "Facebook Login"
         case .overlay:
             return "Overlay Menu"
         case .escaping:
