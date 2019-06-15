@@ -73,14 +73,6 @@ class TopViewController: UIViewController {
         }
     }
     
-    private func showFacebookLoginViewController() {
-        DispatchQueue.main.async {
-            guard let navigation = UIStoryboard(name: "FacebookLogin", bundle: nil).instantiateInitialViewController() as? UINavigationController,
-            let viewController = navigation.topViewController as? FacebookLoginViewController else { return }
-            self.navigationController?.pushViewController(viewController, animated: true)
-        }
-    }
-    
     private func showOverlayMatViewController() {
         DispatchQueue.main.async {
             guard let navigation = UIStoryboard(name: "OverlayMat", bundle: nil).instantiateInitialViewController() as? UINavigationController,
@@ -197,8 +189,6 @@ extension TopViewController: UITableViewDelegate {
                 showWKWebViewController()
             case .realTimeObjectTracking:
                 showRealTimeObjectTrackingViewController()
-            case .facebookLogin:
-                showFacebookLoginViewController()
             case .overlay:
                 showOverlayMatViewController()
             case .escaping:
